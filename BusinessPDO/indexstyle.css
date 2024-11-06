@@ -1,0 +1,253 @@
+body {  
+    font-family: "Nunito", Arial;
+    background-color: #F4FDFF;
+    color: black;
+}
+input {
+	font-size: 1.5em;
+	height: 50px;
+	width: 100%;
+    max-width: 200px;
+}
+table, th, td {
+	border:1px solid black;
+}
+
+.main-content {
+    margin-left: 270px; 
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; 
+    }
+    .main-content {
+        margin-left: 220px; 
+    }
+}
+@media (max-width: 576px) {
+    .sidebar {
+        position: relative; 
+        width: 100%; 
+        height: auto; 
+        border-right: none; 
+        padding: 15px 10px;
+    }
+    .main-content {
+        margin-left: 0; 
+    }
+}
+
+/*nav side bar design*/
+.sidebar {
+    width: 20%;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #F4FDFF;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: center;
+    border-right: 4px solid black;
+    box-sizing: border-box;
+}
+
+.sidebar img {
+    height: 95px;
+    width: auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.sidebar a.navbar-brand {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content {
+    margin-left: 270px; 
+    padding: 20px;
+}
+
+/*fill up area designs*/
+
+.fill-up-area {
+    color: white;
+    padding: 5%;
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+    background: rgb(10,7,8);
+background: radial-gradient(circle, rgba(10,7,8,1) 30%, rgba(45,43,43,1) 41%, rgba(68,68,68,1) 50%, rgba(116,116,116,1) 61%, rgba(177,177,177,1) 84%);;
+}
+
+input {
+    border-radius: 5px;
+    border: none;
+    width: 10vw;
+}
+
+.form-control {
+    width: 10vw;
+}
+
+.btn-submit {
+    background-color: #0a0708;
+    color: whitesmoke;
+    border: 1px solid white;
+}
+
+.view {
+    border-radius: 3px;
+    padding: 4px;
+    background-color: #0a0708;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.edit {
+    color: black;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.delete {
+    color: black;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+/* Users List Container */
+.users-list-container {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Header */
+.users-header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Users List */
+.users-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* User Items */
+.user-item {
+    border-top: 1px solid #ddd;
+}
+
+.user-item a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.user-item a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Logout Button */
+.logout-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #555;
+}
+
+/* Category Box */
+.category-box {
+    border: 1px solid gray;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #F4FDFF;
+    width: 20vw;
+}
+
+/* Category Title */
+.category-title {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Category Content */
+.category-content {
+    padding: 10px;
+}
+
+.editAndDelete {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Action Buttons */
+.view, .edit, .delete {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+.view {
+    background-color: black;
+}
+
+.edit {
+    color: black;
+}
+
+.delete {
+    color: black;
+}
+
+.view:hover, .edit:hover, .delete:hover {
+    opacity: 0.8;
+}

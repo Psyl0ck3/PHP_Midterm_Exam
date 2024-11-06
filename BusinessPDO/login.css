@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Nunito, Arial;
+}
+
+body {
+    background: url('loginbg.png') center/cover no-repeat;
+    min-height: 100vh; /* Ensures it always covers the full viewport height */
+}
+
+.login-content {
+    width: 30vw;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+.register-content {
+    width: 30vw;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+.btn {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+img {
+    height: 20vh;
+    width: auto;
+    max-width: 100%;
+}
+
+.inputfields {
+    width: 15vw;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.view-user {
+    background-color: white;
+    border-radius: 7px;
+    width: 25vw;
+}
